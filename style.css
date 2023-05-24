@@ -1,0 +1,95 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+}
+
+/* UTILITY */
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+/* TOP-NAV */
+
+.top-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .625rem;
+    margin-right: 7.5rem;
+}
+
+.top-nav ul li {
+    margin-right: 3.125rem;
+}
+
+/* BOTTOM-NAV */
+
+.bottom-nav {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.bottom-nav img {
+    width: 4.375rem;
+    height: 4.375rem;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.bottom-nav ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+#trova-un-ristorante {
+    margin-left: 3.75rem;
+}
+
+.bg-header {
+    max-width: 100%;
+    height: 34.375rem;
+    background-image: url(images/menu--hero-dsk.jpg.webp);
+    background-size: cover;
+    margin-top: .9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+
+.text-header {
+    max-width: 400px;
+    margin-left: 80px;
+}
+
+.text-header > * {
+    margin-bottom: .9375rem;
+}
+
+/* MAIN */
+
+main > ul {
+    display: flex;
+}
+
+main > ul li {
+    margin-right: .625rem;
+}
+
