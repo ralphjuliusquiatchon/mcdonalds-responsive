@@ -39,23 +39,18 @@ a {
 /* BOTTOM-NAV */
 
 .bottom-nav {
-    max-width: 75rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .bottom-nav img {
-    width: 4.375rem;
-    height: 4.375rem;
-}
-
-.bottom-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    width: 70px;
+    height: 70px;
 }
 
 .bottom-nav ul {
     display: flex;
+    justify-content: space-between;
     align-items: flex-end;
 }
 
@@ -65,31 +60,150 @@ a {
 
 .bg-header {
     max-width: 100%;
-    height: 34.375rem;
+    height: 550px;
     background-image: url(images/menu--hero-dsk.jpg.webp);
     background-size: cover;
+    background-position: center;
     margin-top: .9375rem;
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: center;
 }
 
-.text-header {
-    max-width: 400px;
-    margin-left: 80px;
+.text-container {
+    width: 350px;
+    margin: 0 170px;
 }
 
-.text-header > * {
+.text {
+    width: 350px;
+  
+    
+}
+
+.text > * {
     margin-bottom: .9375rem;
+}
+
+/* NAV-TABLET */
+
+.nav-tablet {
+    max-width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+
+.nav-tablet img {
+    width: 100px;
+    height: 60px;
+}
+
+.nav-tablet ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-tablet ul li {
+    padding: .9375rem 1.875rem;
 }
 
 /* MAIN */
 
-main > ul {
-    display: flex;
+/* MAIN-TABLET */
+
+.prodotti {
+    display: none;
 }
 
-main > ul li {
+.row {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.row > ul {
+    display: flex;
+    margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
+}
+
+.row > ul li {
     margin-right: .625rem;
 }
+
+.menu-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-container > div {
+    width: calc(100% / 6);
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.menu-container img {
+    width: 100%;
+    margin-bottom: .625rem;
+}
+
+
+
+/* RESPONSIVE */
+
+/* Tablet fino a 768px */
+
+@media screen and (max-width: 768px){
+
+    /*header */
+
+    .nav-tablet {
+        display: block;
+    }
+
+    .top-nav,
+    .bottom-nav {
+        display: none;
+     }
+
+    .bg-header p {
+        display: none;
+    }
+
+    .bg-header {
+        background-image: url(images/bg-header-tablet.webp);
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .text-container{
+        text-align: center;
+        margin-bottom: 6.25rem;
+    }
+
+    .row ul {
+        display: none;
+    }
+
+    .prodotti {
+        display: block;
+        margin: 1.875rem 0;
+        margin-left: 1.875rem;
+    }
+
+    .menu-container > div {
+        width: calc(100% / 4);
+
+}
+
+
+
+
+
 
